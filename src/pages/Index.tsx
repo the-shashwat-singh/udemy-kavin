@@ -9,15 +9,17 @@ const Index = () => {
       <Header />
       
       <main className="max-w-7xl mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="flex items-start gap-4" style={{ width: '1340px', height: '788.13px' }}>
           {/* Main Certificate Area */}
-          <div className="lg:col-span-2 space-y-6">
+          <div className="flex flex-col">
             <CertificateDocument />
-            <VerificationText />
+            <div style={{ width: '937.1px', height: '71.69px' }}>
+              <VerificationText />
+            </div>
           </div>
           
           {/* Sidebar */}
-          <div className="lg:col-span-1">
+          <div className="flex-shrink-0">
             <CourseSidebar />
           </div>
         </div>

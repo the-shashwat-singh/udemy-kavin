@@ -1,79 +1,91 @@
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { Download, Share2, Star } from "lucide-react";
-import circuitImage from "@/assets/circuit-course.jpg";
+import thumbnailImage from "@/assets/thumbnail.webp";
 
 const CourseSidebar = () => {
   return (
-    <div className="space-y-6">
+    <div className="space-y-0" style={{ width: '323px', height: '788.13px' }}>
       {/* Certificate Recipient */}
-      <Card className="p-4">
+      <div className="p-4">
         <h3 className="font-semibold text-udemy-gray-dark mb-3">Certificate Recipient:</h3>
         <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 bg-udemy-gray-dark rounded-full flex items-center justify-center">
+          <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
             <span className="text-white text-sm font-medium">SS</span>
           </div>
-          <span className="font-medium text-udemy-gray-dark">Shashwat Singh</span>
+          <span className="font-bold text-udemy-gray-dark">Shashwat Singh</span>
         </div>
-      </Card>
+      </div>
 
       {/* Course Info */}
-      <Card className="p-4">
+      <div className="p-4 space-y-2 -mt-16">
         <h3 className="font-semibold text-udemy-gray-dark mb-3">About the Course:</h3>
         
         <img 
-          src={circuitImage} 
-          alt="Circuit Analysis Course - Electronic circuit board with components" 
-          className="w-full h-32 object-cover rounded-lg mb-4"
+          src={thumbnailImage} 
+          alt="Course Thumbnail" 
+          className="w-full h-48 object-cover mb-4"
         />
         
         <div className="space-y-2">
-          <h4 className="font-semibold text-udemy-gray-dark">
+          <h4 className="text-base font-medium text-udemy-gray-dark">
             Analog Electronics - Complete Course (35+ Hours)
           </h4>
-          <div className="text-udemy-gray-medium text-sm">J P</div>
+          <div className="text-udemy-gray-medium text-xs">J P</div>
           
           <div className="flex items-center space-x-1">
-            <span className="text-udemy-orange font-bold">4.5</span>
+            <span className="text-xs font-medium text-amber-700">4.1</span>
             <div className="flex">
               {[1, 2, 3, 4].map((star) => (
-                <Star key={star} className="w-4 h-4 fill-udemy-orange text-udemy-orange" />
+                <Star key={star} className="w-2.5 h-2.5 fill-current" style={{ color: 'oklch(65% 0.08 51.53deg)' }} />
               ))}
-              <Star className="w-4 h-4 text-udemy-orange" />
+              <Star className="w-2.5 h-2.5" style={{ color: 'oklch(65% 0.08 51.53deg)' }} />
             </div>
-            <span className="text-udemy-gray-medium text-sm">(7)</span>
+            <span className="text-udemy-gray-medium text-xs">(159)</span>
           </div>
           
-          <div className="text-udemy-gray-medium text-sm">
-            35 total hours • 317 lectures
+          <div className="text-udemy-gray-medium text-xs">
+            35.5 total hours • 212 lectures
           </div>
           
           <div className="flex items-center space-x-2">
-            <span className="text-xl font-bold text-udemy-gray-dark">₹549</span>
-            <span className="text-udemy-gray-medium line-through">₹2759</span>
+            <span className="text-base font-medium text-udemy-gray-dark">₹589</span>
+            <span className="text-gray-500 line-through text-sm">₹2,759</span>
           </div>
         </div>
-      </Card>
+      </div>
 
       {/* Action Buttons */}
-      <div className="space-y-3">
-        <Button className="w-full bg-udemy-purple hover:bg-udemy-purple/90 text-white">
-          <Download className="w-4 h-4 mr-2" />
+      <div className="p-4">
+        <button 
+          className="border font-bold text-sm flex items-center justify-center rounded-md transition-colors duration-200 hover:bg-opacity-10" 
+          style={{ 
+            width: '112.88px', 
+            height: '40px', 
+            padding: '0px 12px', 
+            borderColor: 'oklch(48.41% 0.2342 293.93deg)', 
+            color: 'oklch(48.41% 0.2342 293.93deg)',
+            backgroundColor: 'transparent'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = 'oklch(48.41% 0.2342 293.93deg)';
+            e.currentTarget.style.backgroundColor = 'oklch(48.41% 0.2342 293.93deg / 0.1)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = 'transparent';
+          }}
+          onClick={() => {
+            const link = document.createElement('a');
+            link.href = '/src/assets/certificate.png';
+            link.download = 'certificate.png';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          }}
+        >
+          <Download width="16" height="16" className="mr-2" />
           Download
-        </Button>
-        <Button variant="outline" className="w-full border-udemy-purple text-udemy-purple hover:bg-udemy-purple/5">
-          <Share2 className="w-4 h-4 mr-2" />
-          Share
-        </Button>
+        </button>
       </div>
 
-      {/* Update Certificate */}
-      <div className="text-sm text-udemy-gray-medium">
-        <span className="text-udemy-purple font-medium cursor-pointer hover:underline">
-          Update your certificate
-        </span>{" "}
-        with your correct name or preferred language
-      </div>
     </div>
   );
 };
