@@ -3,10 +3,7 @@ import thumbnailImage from "@/assets/thumbnail.webp";
 
 const CourseSidebar = () => {
   return (
-    <div 
-      className="space-y-4 w-full"
-      style={{ width: '323px', height: '788.13px' }}
-    >
+    <div className="space-y-4 w-full lg:w-80 lg:flex-shrink-0">
       {/* Certificate Recipient */}
       <div className="p-4">
         <h3 className="font-semibold text-udemy-gray-dark mb-3 text-sm sm:text-base">Certificate Recipient:</h3>
@@ -59,7 +56,7 @@ const CourseSidebar = () => {
       {/* Action Buttons */}
       <div className="p-4">
         <button 
-          className="border font-bold text-sm flex items-center justify-center rounded-md transition-colors duration-200 hover:bg-opacity-10 w-full sm:w-auto px-4 py-2" 
+          className="border font-bold text-sm flex items-center justify-center rounded-md transition-colors duration-200 hover:bg-opacity-10 w-full px-4 py-2" 
           style={{ 
             borderColor: 'oklch(48.41% 0.2342 293.93deg)', 
             color: 'oklch(48.41% 0.2342 293.93deg)',
