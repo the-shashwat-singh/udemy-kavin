@@ -3,13 +3,13 @@ import CertificateImage from "@/assets/certificate.png";
 
 const CertificateDocument = () => {
   return (
-    <Card className="border border-border shadow-lg overflow-hidden" style={{ width: '945px', height: '703.35px' }}>
+    <Card className="border border-border shadow-lg overflow-hidden w-full">
       {/* Certificate Image */}
-      <div className="w-full h-full">
+      <div className="w-full">
         <img 
           src={CertificateImage} 
           alt="Certificate of Completion" 
-          className="w-full h-full object-contain"
+          className="w-full h-auto object-contain max-h-[70vh] sm:max-h-[80vh]"
         />
       </div>
     </Card>

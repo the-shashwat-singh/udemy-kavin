@@ -8,18 +8,18 @@ const Index = () => {
     <div className="min-h-screen bg-udemy-gray-light">
       <Header />
       
-      <main className="max-w-7xl mx-auto px-4 py-8">
-        <div className="flex items-start gap-4" style={{ width: '1340px', height: '788.13px' }}>
+      <main className="max-w-7xl mx-auto px-4 py-4 md:py-8">
+        <div className="flex flex-col lg:flex-row items-start gap-4 lg:gap-6">
           {/* Main Certificate Area */}
-          <div className="flex flex-col">
+          <div className="w-full lg:flex-1">
             <CertificateDocument />
-            <div style={{ width: '937.1px', height: '71.69px' }}>
+            <div className="mt-4">
               <VerificationText />
             </div>
           </div>
           
           {/* Sidebar */}
-          <div className="flex-shrink-0">
+          <div className="w-full lg:w-80 lg:flex-shrink-0">
             <CourseSidebar />
           </div>
         </div>

@@ -3,30 +3,30 @@ import thumbnailImage from "@/assets/thumbnail.webp";
 
 const CourseSidebar = () => {
   return (
-    <div className="space-y-0" style={{ width: '323px', height: '788.13px' }}>
+    <div className="space-y-4 w-full">
       {/* Certificate Recipient */}
-      <div className="p-4">
-        <h3 className="font-semibold text-udemy-gray-dark mb-3">Certificate Recipient:</h3>
+      <div className="p-4 bg-white rounded-lg border border-gray-200">
+        <h3 className="font-semibold text-udemy-gray-dark mb-3 text-sm sm:text-base">Certificate Recipient:</h3>
         <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
-            <span className="text-white text-sm font-medium">SS</span>
+          <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center">
+            <span className="text-white text-xs sm:text-sm font-medium">SS</span>
           </div>
-          <span className="font-bold text-udemy-gray-dark">Shashwat Singh</span>
+          <span className="font-bold text-udemy-gray-dark text-sm sm:text-base">Shashwat Singh</span>
         </div>
       </div>
 
       {/* Course Info */}
-      <div className="p-4 space-y-2 -mt-16">
-        <h3 className="font-semibold text-udemy-gray-dark mb-3">About the Course:</h3>
+      <div className="p-4 bg-white rounded-lg border border-gray-200 space-y-3">
+        <h3 className="font-semibold text-udemy-gray-dark mb-3 text-sm sm:text-base">About the Course:</h3>
         
         <img 
           src={thumbnailImage} 
           alt="Course Thumbnail" 
-          className="w-full h-48 object-cover mb-4"
+          className="w-full h-32 sm:h-48 object-cover rounded-lg"
         />
         
         <div className="space-y-2">
-          <h4 className="text-base font-medium text-udemy-gray-dark">
+          <h4 className="text-sm sm:text-base font-medium text-udemy-gray-dark leading-tight">
             Analog Electronics - Complete Course (35+ Hours)
           </h4>
           <div className="text-udemy-gray-medium text-xs">J P</div>
@@ -47,26 +47,22 @@ const CourseSidebar = () => {
           </div>
           
           <div className="flex items-center space-x-2">
-            <span className="text-base font-medium text-udemy-gray-dark">₹589</span>
-            <span className="text-gray-500 line-through text-sm">₹2,759</span>
+            <span className="text-sm sm:text-base font-medium text-udemy-gray-dark">₹589</span>
+            <span className="text-gray-500 line-through text-xs sm:text-sm">₹2,759</span>
           </div>
         </div>
       </div>
 
       {/* Action Buttons */}
-      <div className="p-4">
+      <div className="p-4 bg-white rounded-lg border border-gray-200">
         <button 
-          className="border font-bold text-sm flex items-center justify-center rounded-md transition-colors duration-200 hover:bg-opacity-10" 
+          className="border font-bold text-sm flex items-center justify-center rounded-md transition-colors duration-200 hover:bg-opacity-10 w-full sm:w-auto px-4 py-2" 
           style={{ 
-            width: '112.88px', 
-            height: '40px', 
-            padding: '0px 12px', 
             borderColor: 'oklch(48.41% 0.2342 293.93deg)', 
             color: 'oklch(48.41% 0.2342 293.93deg)',
             backgroundColor: 'transparent'
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = 'oklch(48.41% 0.2342 293.93deg)';
             e.currentTarget.style.backgroundColor = 'oklch(48.41% 0.2342 293.93deg / 0.1)';
           }}
           onMouseLeave={(e) => {
