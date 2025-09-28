@@ -42,8 +42,8 @@ const CertificateCard = () => {
       {/* Certificate Description */}
       <div className="mt-8 text-udemy-gray-medium leading-relaxed">
         This certificate above verifies that <span className="text-udemy-purple font-medium">Shashwat Singh</span> successfully completed the course{" "}
-        <span className="text-udemy-purple font-medium">Mastering Data Structures & Algorithms using C and C++</span> on 03/24/2025 as taught by{" "}
-        <span className="text-udemy-purple font-medium">Abdul Bari</span> on Udemy. The certificate indicates the entire course was completed as validated by 
+        <span className="text-udemy-purple font-medium">Circuit Analysis - Complete Course (64+ Hours)</span> on 28/09/25 as taught by{" "}
+        <span className="text-udemy-purple font-medium">J P</span> on Udemy. The certificate indicates the entire course was completed as validated by 
         the student. The course duration represents the total video hours of the course at time of most recent completion.
       </div>
     </Card>
