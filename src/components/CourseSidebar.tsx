@@ -3,20 +3,23 @@ import thumbnailImage from "@/assets/thumbnail.webp";
 
 const CourseSidebar = () => {
   return (
-    <div className="space-y-4 w-full">
+    <div 
+      className="space-y-4 w-full"
+      style={{ width: '323px', height: '788.13px' }}
+    >
       {/* Certificate Recipient */}
-      <div className="p-4 bg-white rounded-lg border border-gray-200">
+      <div className="p-4">
         <h3 className="font-semibold text-udemy-gray-dark mb-3 text-sm sm:text-base">Certificate Recipient:</h3>
         <div className="flex items-center space-x-3">
           <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center">
-            <span className="text-white text-xs sm:text-sm font-medium">SS</span>
+            <span className="text-white text-xs sm:text-sm font-medium">KP</span>
           </div>
-          <span className="font-bold text-udemy-gray-dark text-sm sm:text-base">Shashwat Singh</span>
+          <span className="font-bold text-udemy-gray-dark text-sm sm:text-base">Kavin Pillay</span>
         </div>
       </div>
 
       {/* Course Info */}
-      <div className="p-4 bg-white rounded-lg border border-gray-200 space-y-3">
+      <div className="p-4 space-y-3">
         <h3 className="font-semibold text-udemy-gray-dark mb-3 text-sm sm:text-base">About the Course:</h3>
         
         <img 
@@ -54,7 +57,7 @@ const CourseSidebar = () => {
       </div>
 
       {/* Action Buttons */}
-      <div className="p-4 bg-white rounded-lg border border-gray-200">
+      <div className="p-4">
         <button 
           className="border font-bold text-sm flex items-center justify-center rounded-md transition-colors duration-200 hover:bg-opacity-10 w-full sm:w-auto px-4 py-2" 
           style={{ 
@@ -71,7 +74,7 @@ const CourseSidebar = () => {
           onClick={() => {
             const link = document.createElement('a');
             link.href = '/src/assets/certificate.png';
-            link.download = 'certificate.png';
+            link.download = 'certificate-kavin.png';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
