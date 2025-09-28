@@ -1,12 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/Header";
+import CertificateCard from "@/components/CertificateCard";
+import CourseSidebar from "@/components/CourseSidebar";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-udemy-gray-light">
+      <Header />
+      
+      <main className="max-w-7xl mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Main Certificate Area */}
+          <div className="lg:col-span-2">
+            <CertificateCard />
+          </div>
+          
+          {/* Sidebar */}
+          <div className="lg:col-span-1">
+            <CourseSidebar />
+          </div>
+        </div>
+      </main>
     </div>
   );
 };

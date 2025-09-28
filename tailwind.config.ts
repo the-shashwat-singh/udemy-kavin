@@ -47,6 +47,15 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        udemy: {
+          purple: "hsl(var(--udemy-purple))",
+          orange: "hsl(var(--udemy-orange))",
+          gray: {
+            light: "hsl(var(--udemy-gray-light))",
+            medium: "hsl(var(--udemy-gray-medium))",
+            dark: "hsl(var(--udemy-gray-dark))",
+          },
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
