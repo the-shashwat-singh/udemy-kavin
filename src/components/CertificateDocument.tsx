@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 
 const CertificateDocument = () => {
   return (
-    <Card className="bg-background border border-border shadow-lg">
+    <Card className="border border-border shadow-lg" style={{backgroundColor: '#f7f8f8'}}>
       {/* Certificate proper - matching exact layout */}
       <div className="p-12 min-h-[600px] flex flex-col">
         {/* Header with logo and certificate details */}
@@ -24,8 +24,8 @@ const CertificateDocument = () => {
             
             <div className="space-y-6">
               <h1 className="text-5xl md:text-6xl font-bold text-udemy-gray-dark leading-tight">
-                Circuit Analysis - Complete<br />
-                Course (64+ Hours)
+                Analog Electronics - Complete<br />
+                Course (35+ Hours)
               </h1>
               
               <div className="text-udemy-gray-medium text-lg">
@@ -39,7 +39,7 @@ const CertificateDocument = () => {
             <h2 className="text-4xl font-bold text-udemy-gray-dark">Shashwat Singh</h2>
             <div className="space-y-1 text-udemy-gray-medium text-lg">
               <div><span className="font-medium">Date</span> September 28, 2025</div>
-              <div><span className="font-medium">Length</span> 64 total hours</div>
+              <div><span className="font-medium">Length</span> 35 total hours</div>
             </div>
           </div>
         </div>

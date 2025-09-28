@@ -29,7 +29,7 @@ const CourseSidebar = () => {
         
         <div className="space-y-2">
           <h4 className="font-semibold text-udemy-gray-dark">
-            Circuit Analysis - Complete Course (64+ Hours)
+            Analog Electronics - Complete Course (35+ Hours)
           </h4>
           <div className="text-udemy-gray-medium text-sm">J P</div>
           
@@ -45,12 +45,12 @@ const CourseSidebar = () => {
           </div>
           
           <div className="text-udemy-gray-medium text-sm">
-            64 total hours • 317 lectures
+            35 total hours • 317 lectures
           </div>
           
           <div className="flex items-center space-x-2">
-            <span className="text-xl font-bold text-udemy-gray-dark">₹499</span>
-            <span className="text-udemy-gray-medium line-through">₹799</span>
+            <span className="text-xl font-bold text-udemy-gray-dark">₹549</span>
+            <span className="text-udemy-gray-medium line-through">₹2759</span>
           </div>
         </div>
       </Card>

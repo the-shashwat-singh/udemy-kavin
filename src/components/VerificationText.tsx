@@ -8,7 +8,7 @@ const VerificationText = () => {
         <span className="text-udemy-purple font-medium">Shashwat Singh</span>{" "}
         successfully completed the course{" "}
         <span className="text-udemy-purple font-medium">
-          Circuit Analysis - Complete Course (64+ Hours)
+          Analog Electronics - Complete Course (35+ Hours)
         </span>{" "}
         on 28/09/25 as taught by{" "}
         <span className="text-udemy-purple font-medium">J P</span> on Udemy. 
